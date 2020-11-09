@@ -4,13 +4,13 @@ package main
 //一个struct类型的数据类型中含有多个相同类型的基本数据类型
 import "fmt"
 
-type Monster struct{
+type monster struct{
 	Name string
 	Age int
 }
 
 type E struct{
-	Monster
+	monster
 	int
 	n int
 }

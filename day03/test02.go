@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-type Person struct{
+type person struct{
 	Name string
 	Age int
 	Scores [5]float64
@@ -14,7 +14,7 @@ type Person struct{
 }
 
 func main(){
-	var p1 Person
+	var p1 person
 	fmt.Printf("type of p1=%T\n",p1)
 	fmt.Println(p1)
 	fmt.Println(p1.Name=="")

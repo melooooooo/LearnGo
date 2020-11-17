@@ -18,7 +18,7 @@ func main(){
 
 //对于结构体的序列化，如果我们希望序列化之后的key的名字由我们自己指定，那么可以给struct指定一个tag标签
 type Monster struct{
-	Name string `json:"monster_name"`
+	Name string `json:"monster_name"`  //``里面包含的是tag标签
 	Age int `json:"monster_age"`
 	BrithDay string
 	Sal float64

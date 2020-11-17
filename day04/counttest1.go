@@ -28,6 +28,7 @@ func main(){
 			break
 		}
 		str := []rune(res)
+		fmt.Println("str=",str)
 		for _,v:=range str{
 			switch {
 				case v>='a' && v<='z':
@@ -42,7 +43,7 @@ func main(){
 				count.OtherCount++
 			}
 		}
-
 	}
 	fmt.Printf("字符的个数为%v,数字的个数为%v,空格的个数为%v,其他字符的个数为%v",count.ChCount,count.NumCount,count.SpaceCount,count.OtherCount)
+
 }

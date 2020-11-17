@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+//resultOfType, boolean := expression.(Type)：安全的类型断言。
+//resultOfType := expression.(Type)：非安全的类型断言，失败时程序会产生异常。
+
 type Usb interface{
 	Start()
 	Stop()
@@ -60,6 +63,9 @@ func main(){
 	//	computer.Working(usbArr[i])
 	//	fmt.Println()
 	//}
-	for _,v
+	for _,v:=range usbArr{
+		computer.Working(v)
+		fmt.Println()
+	}
 	fmt.Println(usbArr)
 }
